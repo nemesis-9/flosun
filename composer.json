@@ -1,0 +1,18 @@
+{
+    "name": "kavishka/flosun",
+    
+    "authors": [
+        {
+            "name": "nemesis-9",
+            "email": "nyxn96@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+
+    "require": {}
+}
