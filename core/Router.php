@@ -21,11 +21,13 @@ class Router
     {
         $path = $this->request->getPath();
         $method = $this->request->getMethod();
-        $callback = $this->routes[$method][$path];
-        echo '<pre>';
-        var_dump($callback);
-        echo '</pre>';
-        exit;
+        $callback = $this->routes[$method][$path] ?? false;
 
+        if ($callback === false) {
+            echo "Not Found";
+            exit;
+        }
+
+        echo call_user_func($callback);
     }
 }
