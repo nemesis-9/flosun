@@ -3,8 +3,9 @@
 namespace app\controllers;
 
 use app\core\Application;
+use Controller;
 
-class SiteController
+class SiteController extends Controller
 {
     public function home()
     {
@@ -16,7 +17,7 @@ class SiteController
 
     public function contact()
     {
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
 
     public function handleContact()
