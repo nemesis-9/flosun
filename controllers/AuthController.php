@@ -1,5 +1,7 @@
 <?php
 
+namespace app\controllers;
+
 use app\core\Request;
 use app\core\Controller;
 use app\models\RegisterModel;
